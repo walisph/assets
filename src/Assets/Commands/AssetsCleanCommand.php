@@ -56,7 +56,7 @@ class AssetsCleanCommand extends AssetsCommand {
         }
         else
         {
-            return $this->directory();
+            return $this->directory( $this->argument() );
         }
     }
 
@@ -107,7 +107,16 @@ class AssetsCleanCommand extends AssetsCommand {
     protected function getOptions()
     {
         return array(
-            array('directory', 'd', InputOption::VALUE_OPTIONAL, 'Directory to be clean'),
+            ['directory', 'd', InputOption::VALUE_OPTIONAL, 'Directory to be clean']
+        );
+    }
+
+    protected function getArguments()
+    {
+        return array(
+            ['storage', InputArgument::OPTIONAL, 'Clean your assets storage'],
+            ['vendor', InputArgument::OPTIONAL, 'Clean your assets vendor directory'],
+            ['public', InputArgument::OPTIONAL, 'Clean your assets in public directory']
         );
     }
 }
