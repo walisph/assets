@@ -1,0 +1,23 @@
+{
+    "name": "walisph/walis-assets",
+    "description": "Assets commands for Walis Applications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Are Galinada",
+            "email": "jag@walis.com.ph"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Walis\\Assets\\": "src/Assets"
+        }
+    }
+}
