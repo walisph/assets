@@ -56,7 +56,7 @@ class AssetsCleanCommand extends AssetsCommand {
         }
         else
         {
-            return $this->directory( $this->argument() );
+            return $this->directory();
         }
     }
 
@@ -64,7 +64,7 @@ class AssetsCleanCommand extends AssetsCommand {
     {
         switch ( $directory ) {
             case 'storage':
-                $this->info('Cleaning assets library in storage.');
+                $this->comment('Cleaning assets library in storage.');
                 $count = 0;
                 foreach ($this->filesystem->files( $this->directory['storage'] ) as $file)
                 {
@@ -75,7 +75,7 @@ class AssetsCleanCommand extends AssetsCommand {
                 break;
 
             case 'vendor':
-                $this->info('Cleaning libraries in the application assets vendor directory.');
+                $this->comment('Cleaning libraries in the application assets vendor directory.');
                 $count = 0;
                 foreach ($this->filesystem->directories( $this->directory['vendor'] ) as $directory)
                 {
@@ -86,15 +86,15 @@ class AssetsCleanCommand extends AssetsCommand {
                 break;
 
             case 'public':
-                $this->info('Cleaning assets directory in public.');
+                $this->comment('Cleaning assets directory in public.');
                 $this->filesystem->deleteDirectory( $this->directory['public'] );
-                $this->info($this->directory['public'] . 'directory removed');
+                $this->info('Assets directory in public has been removed');
                 break;
 
             default:
                 $this->directory('storage');
                 $this->directory('vendor');
-                $this->directory('vendor');
+                $this->directory('public');
                 break;
         }
     }
@@ -111,12 +111,4 @@ class AssetsCleanCommand extends AssetsCommand {
         );
     }
 
-    protected function getArguments()
-    {
-        return array(
-            ['storage', InputArgument::OPTIONAL, 'Clean your assets storage'],
-            ['vendor', InputArgument::OPTIONAL, 'Clean your assets vendor directory'],
-            ['public', InputArgument::OPTIONAL, 'Clean your assets in public directory']
-        );
-    }
 }
