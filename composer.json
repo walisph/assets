@@ -3,6 +3,13 @@
     "description": "Assets Module for Walis Applications",
     "license": "MIT",
     "type": "walisph-module",
+    "keywords": [
+        "walis",
+        "walisph",
+        "walisph-module",
+        "assets",
+        "module"
+    ],
     "support": {
         "email": "support@walis.com.ph",
         "issues": "https://github.com/walisph/assets/issues",
@@ -30,6 +37,11 @@
     "autoload": {
         "psr-0": {
             "Walisph\\Assets": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-develop"
         }
     }
 }
