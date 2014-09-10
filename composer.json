@@ -1,0 +1,35 @@
+{
+    "name": "walisph/assets",
+    "description": "Assets Module for Walis Applications",
+    "license": "MIT",
+    "type": "walisph-module",
+    "support": {
+        "email": "support@walis.com.ph",
+        "issues": "https://github.com/walisph/assets/issues",
+        "source": "https://github.com/walisph/assets"
+    },
+    "authors": [
+        {
+            "name": "Jay Are Galinada",
+            "email": "jayaregalinada@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4.0",
+        "illuminate/filesystem": "~4.0",
+        "zurb/foundation": "dev-master",
+        "twbs/bootstrap": "dev-master",
+        "twbs/bootstrap-sass": "dev-master",
+        "fortawesome/font-awesome": "dev-master"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "phpunit/phpunit": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Walisph\\Assets": "src/"
+        }
+    }
+}
