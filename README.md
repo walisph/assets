@@ -50,7 +50,7 @@ For example, the company Zurb and their product the Foundation. Between the comp
 ```
 php artisan assets:import zurb/foundation
 ```
-Since v0.1.2, you can now import an assets library downloaded by your bower, for example:
+Since v0.1.1, you can now import an assets library downloaded by your bower, for example:
 ```
 php artisan assets:import animate.css
 
