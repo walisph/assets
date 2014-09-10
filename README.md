@@ -1,9 +1,10 @@
 # Assets Module
 ###### This is new repository from the old [walisph\walis-assets](https://github.com/walisph/walis-assets)
-[![Latest Stable Version](https://poser.pugx.org/walisph/walis-assets/v/stable.svg)](https://packagist.org/packages/walisph/walis-assets)
-[![Total Downloads](https://poser.pugx.org/walisph/walis-assets/downloads.svg)](https://packagist.org/packages/walisph/walis-assets)
-[![Latest Unstable Version](https://poser.pugx.org/walisph/walis-assets/v/unstable.svg)](https://packagist.org/packages/walisph/walis-assets)
-[![License](https://poser.pugx.org/walisph/walis-assets/license.svg)](https://packagist.org/packages/walisph/walis-assets)
+[![Build Status](https://travis-ci.org/walisph/assets.svg)](https://travis-ci.org/walisph/assets)
+[![Latest Stable Version](https://poser.pugx.org/walisph/assets/v/stable.svg)](https://packagist.org/packages/walisph/assets)
+[![Total Downloads](https://poser.pugx.org/walisph/assets/downloads.svg)](https://packagist.org/packages/walisph/assets)
+[![Latest Unstable Version](https://poser.pugx.org/walisph/assets/v/unstable.svg)](https://packagist.org/packages/walisph/assets)
+[![License](https://poser.pugx.org/walisph/assets/license.svg)](https://packagist.org/packages/walisph/assets)
 
 This package focus on assets commands but later on can be more extensive. This is built for WalispPH 2 Laravel Applications, yet.
 
