@@ -25,10 +25,10 @@
         "php": ">=5.4.0",
         "illuminate/support": "~4.0",
         "illuminate/filesystem": "~4.0",
-        "zurb/foundation": "dev-master",
-        "twbs/bootstrap": "dev-master",
-        "twbs/bootstrap-sass": "dev-master",
-        "fortawesome/font-awesome": "dev-master"
+        "zurb/foundation": "~5.4",
+        "twbs/bootstrap": "~3.2",
+        "twbs/bootstrap-sass": "~3.2",
+        "fortawesome/font-awesome": "~4.2"
     },
     "require-dev": {
         "phpspec/phpspec": "~2.0",
