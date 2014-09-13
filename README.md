@@ -1,5 +1,5 @@
 # Assets Module
-###### This is new repository from the old [walisph\walis-assets](https://github.com/walisph/walis-assets)
+###### This is new repository from the old [walisph/walis-assets](https://github.com/walisph/walis-assets)
 [![Build Status](https://travis-ci.org/walisph/assets.svg)](https://travis-ci.org/walisph/assets)
 [![Latest Stable Version](https://poser.pugx.org/walisph/assets/v/stable.svg)](https://packagist.org/packages/walisph/assets)
 [![Total Downloads](https://poser.pugx.org/walisph/assets/downloads.svg)](https://packagist.org/packages/walisph/assets)
@@ -36,9 +36,13 @@ There are many ways to do for your Walis assets directory
  - [Import](#assetsimport)
 
 #### assets:clean
-This function is to clean your assets directory, either `storage`, `vendor` and even `public`
+This function is to clean your assets directory, either `storage`, and even `public`
 ```
 php artisan assets:clean
+```
+To specify a directory just add `-d` to your option
+```
+php artisan assets:clean -d storage
 ```
 
 #### assets:import
