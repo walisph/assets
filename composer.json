@@ -38,10 +38,5 @@
         "psr-0": {
             "Walisph\\Assets": "src/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
-        }
     }
 }
