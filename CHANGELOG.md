@@ -1,10 +1,13 @@
 # CHANGELOG
+ - [v0.1.3](#v013)
  - [v0.1.2](#v012)
  - [v0.1.1](#v011)
  - [v0.1.0](#v010)
 
 * * *
 
+### v0.1.3
+- Add more options specific, instead of using `-d storage` use `--storage`
 ### v0.1.2
 - As of Sept 13, 2014
 - Fixed the AssetsClean in vendor

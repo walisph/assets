@@ -44,6 +44,11 @@ To specify a directory just add `-d` to your option
 ```
 php artisan assets:clean -d storage
 ```
+Or if you want a direct option
+```
+php artisan assets:clean --storage
+```
+this clean the assets storage path
 
 #### assets:import
 This function is to import an assets library from your base vendor directory.
