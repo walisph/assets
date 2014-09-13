@@ -58,17 +58,6 @@ class AssetsCleanCommand extends AssetsCommand
                 $this->info($count .' files removed');
             break;
 
-            case 'vendor':
-                $this->comment('Cleaning libraries in the application assets vendor directory.');
-                $count = 0;
-                foreach ($this->filesystem->directories( $this->directory['vendor'] ) as $directory)
-                {
-                    $this->filesystem->deleteDirectory($directory);
-                    $count++;
-                }
-                $this->info($count .' directory removed');
-            break;
-
             case 'public':
                 $this->comment('Cleaning assets directory in public.');
                 $this->filesystem->deleteDirectory( $this->directory['public'] );
@@ -77,7 +66,6 @@ class AssetsCleanCommand extends AssetsCommand
 
             default:
                 $this->directory('storage');
-                $this->directory('vendor');
                 $this->directory('public');
             break;
         }
