@@ -32,6 +32,14 @@ class AssetsCleanCommand extends AssetsCommand
         {
             return $this->directory( $this->option('directory') );
         }
+        elseif( $this->option('storage') )
+        {
+            return $this->directory( 'storage' );
+        }
+        elseif( $this->option('public') )
+        {
+            return $this->directory( 'public' );
+        }
         else
         {
             return $this->directory();
@@ -79,7 +87,10 @@ class AssetsCleanCommand extends AssetsCommand
     protected function getOptions()
     {
         return [
-            ['directory', 'd', InputOption::VALUE_OPTIONAL, 'Directory to be clean']
+            ['directory', 'd', InputOption::VALUE_OPTIONAL, 'Directory to be clean'],
+            ['storage', null, InputOption::VALUE_NONE, 'Clean the storage directory'],
+            ['public', null, InputOption::VALUE_NONE, 'Clean the public directory']
+
         ];
     }
 
