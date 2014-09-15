@@ -6,7 +6,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/walisph/assets/v/unstable.svg)](https://packagist.org/packages/walisph/assets)
 [![License](https://poser.pugx.org/walisph/assets/license.svg)](https://packagist.org/packages/walisph/assets)
 
-This package focus on assets commands but later on can be more extensive. This is built for WalispPH 2 Laravel Applications, yet.
+This package focus on assets commands but later on can be more extensive. This is built for WalisPH 2 Laravel Applications, yet.
 
 ## Installation
 Install or update the package through your `composer.json`
